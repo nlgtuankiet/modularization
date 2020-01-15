@@ -1,0 +1,25 @@
+def shouldInclude(moduleName) {
+    if (hasProperty('only')) {
+        return only.split(",").contains(moduleName)
+    }
+    return true
+}
+
+include ':app'
+
+if (shouldInclude("home")) {
+    include ':home'
+}
+
+if (shouldInclude("detail")) {
+    include ':detail'
+}
+
+if (shouldInclude("search")) {
+    include ':search'
+}
+
+include ':data'
+include ':common'
+
+rootProject.name='modularization'

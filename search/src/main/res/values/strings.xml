@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">search</string>
+    <string name="title_activity_search">SearchActivity</string>
+</resources>

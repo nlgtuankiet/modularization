@@ -1,0 +1,26 @@
+def projectOrNull(projectName) {
+    try {
+        return project(projectName)
+    } catch (Throwable ignore) {
+    }
+    return null
+}
+
+def deps = [:]
+def version = [:]
+
+version.dagger = "2.25.4"
+deps.dagger = "com.google.dagger:dagger-android-support:${version.dagger}"
+deps.daggerProcessor = "com.google.dagger:dagger-compiler:${version.dagger}"
+deps.daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:${version.dagger}"
+
+deps.guava = "com.google.guava:guava:28.2-android"
+
+deps.internal = [:]
+deps.internal.home = projectOrNull(":home")
+deps.internal.common = projectOrNull(":common")
+deps.internal.data = projectOrNull(":data")
+deps.internal.detail = projectOrNull(":detail")
+deps.internal.search = projectOrNull(":search")
+
+ext.deps = deps
