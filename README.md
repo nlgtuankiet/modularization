@@ -4,7 +4,7 @@ Featuring module exclusion to achieve O(1) build time
 
 ### Install
 
-- Install debug apk command including all feature:  
+- Install debug apk including all feature:  
 `./gradlew :app:installDebug` 
 
 - Install debug apk with only `:home` module:  
