@@ -2,6 +2,8 @@
 
 Featuring module exclusion to achieve O(1) build time
 
+![background](https://raw.githubusercontent.com/nlgtuankiet/modularization/master/.github/background.jpg)
+
 ### Install
 
 - Install debug apk including all feature:  
