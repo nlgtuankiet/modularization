@@ -33,7 +33,7 @@ android {
         if (project.hasProperty("only")) {
             new File(projectDir, "src/fake").listFiles().each { f ->
                 if (!include(f.name)) {
-                    // include no op modules
+                    // include fake source set
                     main.java.srcDir "src/fake/${f.name}"
                 }
             }
