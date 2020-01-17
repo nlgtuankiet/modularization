@@ -4,13 +4,13 @@ Featuring module exclusion to achieve O(1) build time
 
 ### Install
 
-Install debug apk command:  
+- Install debug apk command including all feature:  
 `./gradlew :app:installDebug` 
 
-Install debug apk with only `:home` module:  
+- Install debug apk with only `:home` module:  
 `./gradlew :app:installDebug -Ponly="home"`
 
-Install debug apk with only `:home` module and `:detail` module:  
+- Install debug apk with only `:home` module and `:detail` module:  
 `./gradlew :app:installDebug -Ponly="home,detail"`
 
 ### Navigation
@@ -19,12 +19,12 @@ Use deep link via adb command:
 Ex: `adb shell am start -a android.intent.action.VIEW -d module://home`
 
 
-Home screen: `module://home`
+- Home screen: `module://home`
 
-Detail screen: `module://detail/{productId}`  
+- Detail screen: `module://detail/{productId}`  
 Ex: `module://detail/abc`
 
-Search screen: `module://search/{keyword}`  
+- Search screen: `module://search/{keyword}`  
 Ex: `module://search/android`
 
 
