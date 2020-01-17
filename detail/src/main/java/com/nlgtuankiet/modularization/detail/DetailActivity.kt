@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.annotation.Keep
 import com.nlgtuankiet.modularization.NumberRepository
 import com.nlgtuankiet.modularization.common.IntentProvider
 import com.nlgtuankiet.modularization.common.StarterIntents
@@ -36,6 +37,16 @@ class DetailActivity : DaggerAppCompatActivity() {
             startActivity(intent)
         }
     }
+
+//    companion object { // legacy code
+//        @JvmStatic
+//        @Keep
+//        fun starterIntent(context: Context, productId: String): Intent {
+//            return Intent(context, DetailActivity::class.java).apply {
+//                putExtra("productId", productId)
+//            }
+//        }
+//    }
 
     class StarterIntent @Inject constructor() : StarterIntents.Detail {
 
