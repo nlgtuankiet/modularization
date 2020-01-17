@@ -2,7 +2,7 @@
 
 Featuring module exclusion to achieve O(1) build time
 
-![background](https://github.com/nlgtuankiet/modularization/blob/master/.github/background.jpg)
+![background](./.github/background.jpg)
 
 ### Install
 
