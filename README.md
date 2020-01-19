@@ -29,4 +29,7 @@ Ex: `module://detail/abc`
 - Search screen: `module://search/{keyword}`  
 Ex: `module://search/android`
 
+### Special thank to
+@Khang-NT who made a clever dagger 2 binds optional setup and **fake source** 
+
 
