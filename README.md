@@ -30,6 +30,6 @@ Ex: `module://detail/abc`
 Ex: `module://search/android`
 
 ### Special thank to
-[![avatar](https://avatars0.githubusercontent.com/u/13332950?s=200)](https://github.com/Khang-NT)  
+[![avatar](https://avatars0.githubusercontent.com/u/13332950?s=150&v=4)](https://github.com/Khang-NT)  
 [@Khang-NT](https://github.com/Khang-NT)  
 Who made a clever dagger 2 binds optional setup and **fake source**
