@@ -1,9 +1,11 @@
 #  Modularization example project
 
 Featuring module exclusion to achieve O(1) build time.  
-Blog post: [https://medium.com/@nlg.tuan.kiet/o-1-android-build-time-at-tiki-1a27a804bb6a](https://medium.com/@nlg.tuan.kiet/o-1-android-build-time-at-tiki-1a27a804bb6a)
+Blog post: [https://medium.com/@nlg.tuan.kiet/o-1-android-build-time-at-tiki-1a27a804bb6a](https://medium.com/@nlg.tuan.kiet/o-1-android-build-time-at-tiki-1a27a804bb6a)  
+
+
 <a href="https://androidweekly.net/issues/issue-398" title="Android Weekly Issue 398">
-<img alt="Badge" src="https://androidweekly.net/issues/issue-398/badge" height="20px"></img>
+<img alt="Badge" src="https://androidweekly.net/issues/issue-398/badge" height="20px"/>
 </a>  
 
 
