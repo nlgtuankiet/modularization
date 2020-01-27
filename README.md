@@ -9,7 +9,7 @@ Blog post: [https://medium.com/@nlg.tuan.kiet/o-1-android-build-time-at-tiki-1a2
 </a>  
 
 
-![background](./.github/background.jpg)
+<br/>![background](./.github/background.jpg)
 
 ### Install
 
