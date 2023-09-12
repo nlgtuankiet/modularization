@@ -1,3 +1,12 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+
 def shouldInclude(moduleName) {
     if (hasProperty('only')) {
         return only.split(",").contains(moduleName)

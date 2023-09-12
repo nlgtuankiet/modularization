@@ -6,10 +6,14 @@ def projectOrNull(projectName) {
     return null
 }
 
+kotlin {
+    jvmToolchain(19)
+}
+
 def deps = [:]
 def version = [:]
 
-version.dagger = "2.25.4"
+version.dagger = "2.48"
 deps.dagger = "com.google.dagger:dagger-android-support:${version.dagger}"
 deps.daggerProcessor = "com.google.dagger:dagger-compiler:${version.dagger}"
 deps.daggerAndroidProcessor = "com.google.dagger:dagger-android-processor:${version.dagger}"
