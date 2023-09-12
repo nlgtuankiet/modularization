@@ -24,12 +24,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:exported="true"
-            android:name=".checkout.CheckoutActivity">
-
-        </activity>
-
     </application>
 
 </manifest>

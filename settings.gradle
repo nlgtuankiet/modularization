@@ -32,3 +32,4 @@ include ':data'
 include ':common'
 
 rootProject.name='modularization'
+include ':checkout'

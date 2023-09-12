@@ -2,7 +2,7 @@ package com.nlgtuankiet.modularization
 
 import android.net.Uri
 import android.os.Bundle
-import com.nlgtuankiet.modularization.checkout.CheckoutActivity
+import com.nlgtuankiet.modularization.checkout.CheckoutDelegate
 import com.nlgtuankiet.modularization.common.IntentProvider
 import dagger.android.ContributesAndroidInjector
 import dagger.android.support.DaggerAppCompatActivity
@@ -31,7 +31,7 @@ class DeepLinkDispatcherActivity : DaggerAppCompatActivity() {
                     .orEmpty()
                     .split(",")
                     .toTypedArray()
-                CheckoutActivity.newIntent(context = this, productIds = ids)
+                CheckoutDelegate.checkoutActivityDelegate.newIntent(context = this, productIds = ids)
             }
             else -> intentProvider.homeIntent(this)
         }

@@ -7,8 +7,6 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.nlgtuankiet.modularization.NumberRepository
-import com.nlgtuankiet.modularization.R
-import dagger.android.AndroidInjection
 import javax.inject.Inject
 
 class CheckoutActivity : AppCompatActivity() {
@@ -18,7 +16,7 @@ class CheckoutActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
-        AndroidInjection.inject(this)
+        CheckoutComponent.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
         val ids = intent.getStringArrayExtra("ids") ?: emptyArray()

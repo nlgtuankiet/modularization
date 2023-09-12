@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">modularization</string>
+    <string name="title_checkout">Checkout</string>
 </resources>
