@@ -6,17 +6,29 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.nlgtuankiet.modularization.NumberRepository
 import com.nlgtuankiet.modularization.R
+import dagger.android.AndroidInjection
+import javax.inject.Inject
 
 class CheckoutActivity : AppCompatActivity() {
+
+    @Inject
+    lateinit var numberRepository: NumberRepository
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
+        AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
         val ids = intent.getStringArrayExtra("ids") ?: emptyArray()
-        @SuppressLint("SetTextI18n")
+
+        val randomNumber = numberRepository.getRandomNumber()
+
         findViewById<TextView>(R.id.content).text = """
                 checkout screen for
                 ${ids.toList()}
+                random number: $randomNumber
             """.trimIndent()
     }
 

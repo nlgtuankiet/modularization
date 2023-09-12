@@ -1,5 +1,6 @@
 package com.nlgtuankiet.modularization
 
+import com.nlgtuankiet.modularization.checkout.CheckoutModule
 import com.nlgtuankiet.modularization.common.IntentProvider
 import com.nlgtuankiet.modularization.common.StarterIntents
 import com.nlgtuankiet.modularization.detail.DetailActivityModule
@@ -22,7 +23,8 @@ import javax.inject.Singleton
         DetailActivityModule::class,
         SearchActivityModule::class,
         DeepLinkDispatcherActivity.Module::class,
-        AppComponent.Binding::class
+        AppComponent.Binding::class,
+        CheckoutModule::class,
     ]
 )
 interface AppComponent : AndroidInjector<MyApplication> {
