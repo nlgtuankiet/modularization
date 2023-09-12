@@ -2,6 +2,7 @@ package com.nlgtuankiet.modularization
 
 import android.net.Uri
 import android.os.Bundle
+import com.nlgtuankiet.modularization.checkout.CheckoutActivity
 import com.nlgtuankiet.modularization.common.IntentProvider
 import dagger.android.ContributesAndroidInjector
 import dagger.android.support.DaggerAppCompatActivity
@@ -25,6 +26,13 @@ class DeepLinkDispatcherActivity : DaggerAppCompatActivity() {
                 val keyword = uri.pathSegments.firstOrNull()
                 intentProvider.search(this, keyword)
             }
+            uri.host == "checkout" -> {
+                val ids = uri.pathSegments.lastOrNull()
+                    .orEmpty()
+                    .split(",")
+                    .toTypedArray()
+                CheckoutActivity.newIntent(context = this, productIds = ids)
+            }
             else -> intentProvider.homeIntent(this)
         }
         startActivity(intent)
@@ -43,6 +51,7 @@ class DeepLinkDispatcherActivity : DaggerAppCompatActivity() {
     private fun Uri.isDetailLink(): Boolean {
         return this.host == "detail"
     }
+
 
     @dagger.Module
     interface Module {
